@@ -9,4 +9,4 @@ Responsive design
 
 Developed a responsive expense management web application using HTML, CSS, and JavaScript. Implemented dynamic expense tracking, budget calculations, and LocalStorage for persistent data.
 
-Live Demo — expense-tracker-six-sooty-14.vercel.app
+Live Demo — #expense-tracker-six-sooty-14.vercel.app
