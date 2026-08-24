@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+.container{
+    background:#c8dce0;
+    padding: 25px;
+    border-radius: 10px;
+    width: 700px;
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.dashboard{
+   display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.budget-section{
+  margin: 20px 0 30px;
+}
+.budget-input {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  gap: 15px;
+}
+.budget-input input {
+  flex: 1;
+  padding: 14px 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+}
+.budget-input input:focus {
+  border-color: #00b894;
+}
+#setBudget {
+  padding: 14px 28px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #00b894, #00cec9);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#setBudget:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 184, 148, 0.4);
+}
+#setBudget:active {
+  transform: translateY(0);
+}
+.budget-row {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.budget-row input {
+  flex: 1;
+}
+.card{
+    background: linear-gradient(135deg, #9fade1, #90ec71);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.card h3 {
+  margin-bottom: 10px;
+}
+.card p {
+  font-size: 24px;
+  font-weight: bold;
+}
+h1{
+    font-family: "Black Ops One", system-ui;
+     text-align: center;
+    margin-bottom: 20px;
+    color: #0D4715;
+    letter-spacing: 1px;
+    font-size: 30px;
+    font-weight: 70;
+}
+form div{
+     margin-bottom: 15px;
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input,
+select{
+     width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button{
+    background-color: #AE2448;
+    color: rgb(236, 237, 130);
+    padding: 6px;
+    border: none;
+    border-radius: 5px;
+}
+/*---Expense History--*/
+.expense-section {
+  margin-top: 30px;
+}
+.expense-section h2 {
+  margin-bottom: 15px;
+  font-family: "Black Ops One", system-ui;
+  font-weight: 70;
+  font-size: 25px;
+
+}
+/* Table Container */
+.expense-section table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+/* Table Header */
+.expense-section th {
+  padding: 15px 12px;
+  background: #167c8c;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+/* Table Data */
+.expense-section td {
+  padding: 13px 12px;
+  border-bottom: 1px solid #eeeeee;
+  text-align: center;
+  color: #333;
+  font-size: 15px;
+}
+/* Alternate Rows */
+.expense-section tbody tr:nth-child(even) {
+  background: #f8fafb;
+}
+/* Hover Effect */
+.expense-section tbody tr:hover {
+  background: #eef9fa;
+  transition: 0.2s;
+}/* Remove border from last row */
+.expense-section tbody tr:last-child td {
+  border-bottom: none;
+}
+.delete-btn {
+  padding: 7px 14px;
+  border: none;
+  border-radius: 7px;
+  background: #ff4d4d;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.delete-btn:hover {
+  background: #e53935;
+  transform: translateY(-1px);
+}
+
+/*----Add Expense section----*/
+
+.add-expense-section{
+   background: linear-gradient(135deg, #9fade1, #63dfc9);
+  padding: 30px;
+  margin-top: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+.add-expense-section h2{
+   margin-bottom: 25px;
+    color: #093781;
+     font-size: 25px;
+     font-family: "Black Ops One", system-ui;
+      font-weight: 70;
+
+
+}
+/*----history header---*/
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+  width: 100%;
+  
+}
+.history-header h2 {
+  margin: 0;
+  white-space: nowrap;
+  font-size: 25px;
+  
+}
+#monthFilter {
+  padding: 12px 14px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+  cursor: pointer;
+  width: 250px;
+  margin-left: auto;
+
+}
+#monthFilter:focus {
+  border-color: #00a99d;
+}
+
